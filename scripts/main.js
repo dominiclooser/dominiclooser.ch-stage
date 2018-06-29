@@ -1,5 +1,5 @@
 (function() {
-  $('.hamburger').click(function() {
+  $('.open-nav').click(function() {
     return $('.mobile-nav').show();
   });
 
