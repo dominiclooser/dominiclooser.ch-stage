@@ -7,7 +7,7 @@
     var formatted, raw;
     raw = this.innerHTML;
     if (moment(raw).isValid()) {
-      formatted = moment(raw).format('DD.MM.YY');
+      formatted = moment(raw).format('DD/MM/YY');
       return this.innerHTML = formatted;
     }
   });
