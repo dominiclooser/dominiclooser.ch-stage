@@ -13,7 +13,7 @@
     $list.find('li').each(function() {
       var $entry, date;
       $entry = $(this);
-      date = $entry.children('time').html();
+      date = $entry.find('time').html();
       if (moment(date).isBefore(moment())) {
         $entry.nextAll().each(function() {
           return $(this).remove();
