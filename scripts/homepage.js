@@ -1,5 +1,5 @@
 (function() {
-  var $list, latestDate, now;
+  var $list, $listItems, latestDate, now;
 
   $list = $('.performance-list');
 
@@ -21,6 +21,8 @@
         return $entry.remove();
       }
     });
+    $listItems = $list.children('li');
+    $list.append($listItems.get().reverse());
   }
 
 }).call(this);
