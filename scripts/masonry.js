@@ -12,7 +12,7 @@
   };
 
   $('.masonry').imagesLoaded(function() {
-    return setTimeout(draw, 100);
+    return setTimeout(draw, 800);
   });
 
   lightbox.option({
